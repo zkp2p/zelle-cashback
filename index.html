@@ -37,6 +37,7 @@
         header {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 16px;
             padding: 20px 0;
             border-bottom: 1px solid #333;
@@ -47,6 +48,37 @@
             font-weight: 600;
             color: #ffffff;
             margin: 0;
+        }
+
+        .header-title-and-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+
+        .header-buttons-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .header-buttons button {
+            background-color: #FF3F3E;
+            color: #ffffff;
+            border: 1px solid #98A1C03D;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            margin-left: 10px;
+        }
+
+        .header-buttons button:hover {
+            background-color: #B82524;
         }
 
         main {
@@ -199,8 +231,16 @@
 <body>
     <div class="container">
         <header>
-            <img src="https://zkp2p-assets.s3.amazonaws.com/logo-clear-512px.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 8px;">
-            <h1 class="header-title">ZKP2P Zelle Cashback Campaign</h1>
+            <div class="header-title-and-logo-container">
+                <img src="https://zkp2p-assets.s3.amazonaws.com/logo-clear-512px.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 8px;">
+                <h1 class="header-title">ZKP2P Zelle Cashback Campaign</h1>
+            </div>
+            <div class="header-buttons-container">
+                <div class="header-buttons">
+                    <button class="header-button" onclick="window.open('https://x.com/zkp2p', '_blank')">Learn More</button>
+                    <button class="header-button" onclick="window.open('https://zkp2p.xyz/swap', '_blank')">Onramp Now</button>
+                </div>
+            </div>
         </header>
 
         <main>
