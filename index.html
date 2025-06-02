@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon - Multiple formats for better compatibility -->
+    <link rel="icon" href="/favicon.ico?v=1" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico?v=1" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico?v=1" type="image/x-icon">
+    
     <title>ZKP2P Zelle Cashback Campaign</title>
     <style>
         * {
@@ -12,8 +21,8 @@
         }
 
         body {
-            font-family: Inter;
-            background: #1D1F22;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #181818;
             color: #ffffff;
             line-height: 1.6;
             min-height: 100vh;
@@ -45,11 +54,11 @@
         }
 
         .how-to-section {
-            background: #121a2a;
+            background: #0d111c;
             border-radius: 12px;
             padding: 24px;
             margin: 32px 0;
-            border: 2px solid #0d111c;
+            border: 1px solid #98A1C03D;
         }
 
         .how-to-section h2 {
@@ -60,7 +69,7 @@
         }
 
         .how-to-section p {
-            color: #a0a0a0;
+            color: #ffffff;
             font-size: 0.95rem;
         }
 
@@ -78,7 +87,7 @@
             max-width: 400px;
             padding: 16px 20px;
             font-size: 1rem;
-            border: 2px solid #121a2a;
+            border: 1px solid #98A1C03D;
             border-radius: 12px;
             background: #0d111c;
             color: #ffffff;
@@ -95,11 +104,11 @@
         }
 
         .table-container {
-            background: #121a2a;
+            background: #0d111c;
             border-radius: 12px;
             padding: 24px;
             margin: 32px 0;
-            border: 2px solid #0d111c;
+            border: 1px solid #98A1C03D;
             overflow-x: auto;
         }
 
@@ -111,11 +120,11 @@
         th, td {
             padding: 16px 12px;
             text-align: left;
-            border-bottom: 1px solid #3a3d57;
+            border-bottom: 1px solid #98A1C03D;
         }
 
         th {
-            color: #a0a0a0;
+            color: #bfc0c2;
             font-weight: 500;
             font-size: 0.9rem;
             text-transform: uppercase;
@@ -190,16 +199,16 @@
 <body>
     <div class="container">
         <header>
-            <img src="https://i.ibb.co/mrLrgQs7/ZKP2P.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 8px;">
+            <img src="https://zkp2p-assets.s3.amazonaws.com/logo-clear-512px.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 8px;">
             <h1 class="header-title">ZKP2P Zelle Cashback Campaign</h1>
         </header>
 
         <main>
             <div class="how-to-section">
                 <h2>How to earn?</h2>
-                <p>Complete at least one Zelle transactions through ZKP2P between 2th June and 9th June 2025 to earn 2% cashback.</p>
-                <p>Track your progress and cashback below.</p>
-                <p>Cashback will be sent after June 9th 2025.</p>
+                <p>1. Complete at least one Zelle transactions through ZKP2P between 2nd June and 9th June 2025 to earn 2% cashback.</p>
+                <p>2. Track your progress and cashback below.</p>
+                <p>3. Cashback will be paid out after June 9th 2025.</p>
             </div>
 
             <div class="search-container">
@@ -214,7 +223,7 @@
             <div class="table-container">
                 <div class="loading" id="loadingIndicator">
                     <div class="spinner"></div>
-                    <p>Loading campaign data...</p>
+                    <p>Loading latest transactions data (this may take a few minutes)...</p>
                 </div>
                 
                 <table id="campaignTable" style="display: none;">
