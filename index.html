@@ -269,40 +269,7 @@
                 return campaignData;
             } catch (error) {
                 console.error('Error fetching from API:', error);
-                
-                // Fallback to mock data if API fails
-                campaignData = [
-                    {
-                        address: '0x742d35Cc6Cd34B3C8C0a21EFbDcCDAd2E8B4a8c',
-                        txCount: 15,
-                        amount: 2450.50,
-                        cashback: 24.51
-                    },
-                    {
-                        address: '0x1A2B3C4D5E6F789012345678901234567890F3E',
-                        txCount: 8,
-                        amount: 1200.00,
-                        cashback: 12.00
-                    },
-                    {
-                        address: '0x8E4F2D6A3B9C1F5E7A8D4C6B2E9A1F3D5C7B2D6A',
-                        txCount: 23,
-                        amount: 3800.75,
-                        cashback: 38.01
-                    },
-                    {
-                        address: '0x6D3C8F1A4E7B2D9C5A1F8E3B6D9A2C5F8E1B4D7B9F',
-                        txCount: 5,
-                        amount: 750.25,
-                        cashback: 7.50
-                    },
-                    {
-                        address: '0x9A8B7C6D5E4F3A2B1C9D8E7F6A5B4C3D2E1F9C4E',
-                        txCount: 31,
-                        amount: 5600.80,
-                        cashback: 56.01
-                    }
-                ];
+            
                 
                 return campaignData;
             }
